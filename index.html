@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image" href="/public/images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/bc0e28af09.js" crossorigin="anonymous"></script>
+  <link href="/src/style.css" rel="stylesheet">
+  <title>PORTFOLIO - Accueil</title>
+</head>
+<body>
+  <header>
+    <nav class="w-full flex justify-center bg-gray-900 font-noto">
+      <a href="/index.html"><img src="/public/logo_v2_nbg.png" alt="logo:carpe koï violette et Chris écrit en katakana dessous" class="w-16 sm:w-24 lg:w-32 m-2 lg:fixed top-0 left-1" ></a>
+      <ul class="text-white ml-2 flex justify-center gap-1 h-20 text-xs text-center sm:ml-4 sm:text-sm sm:h-24 sm:gap-4 lg:text-lg lg:h-32 xl:text-xl xl:h-36">
+        <li class="content-evenly m-1 rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:rounded-xl hover:text-fuchsia-600 hover:underline hover:shadow-lg"><a href="/index.html">Accueil</a></li>
+        <li class="content-evenly m-1 rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:rounded-xl hover:text-fuchsia-600 hover:underline hover:shadow-lg"><a href="/a_propos.html">À Propos</a></li>
+        <li class="content-evenly m-1 rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:rounded-xl hover:text-fuchsia-600 hover:underline hover:shadow-lg"><a href="/projets.html">Mes Projets</a></li>
+        <li class="content-evenly m-1 rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:rounded-xl hover:text-fuchsia-600 hover:underline hover:shadow-lg"> <a href="/actualites.html">Actualités</a></li>
+        <li class="content-evenly m-1 rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:rounded-xl hover:text-fuchsia-600 hover:underline hover:shadow-lg"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="font-shippori text-lg font-bold text-fuchsia-600 text-center mt-6 sm:text-xl lg:text-2xl xl:text-3xl">Bienvenue sur mon portfolio !</h1>
+    <p class="text-xs text-justify m-4 sm:text-sm lg:text-base xl:text-base">Je m’appelle Christine &#40;Chris ou クリス pour les intimes <i class="fa-regular fa-face-smile-wink text-fuchsia-600"></i>&#41;, et ce site est avant tout un journal de bord de ma progression dans le monde passionnant du développement web.</p> 
+    <div class="flex w-full">
+      <img src="/public/welcome.jpg" alt="personne qui écrit welcome" class="mx-auto rounded-3xl w-xs m-6 sm:w-md lg:w-xl xl:w-2xl">
+    </div>
+      <p class="text-xs text-justify m-4 sm:text-sm lg:text-base xl:text-base">Je découvre actuellement ce domaine captivant à travers la formation Digital Explorer de l'<a href="https://afpar.re/" target="_blank" class="no-underline hover:underline font-bold text-fuchsia-600">AFPAR</a>, une première étape dans mon projet de reconversion professionnelle. Mon objectif au cours de cette formation, est d'acquérir des bases solides en HTML, CSS, JavaScript et bien plus encore… en espérant pouvoir poursuivre ensuite avec la formation Développeur Web et Web Mobile (DWWM).
+      Ce portfolio me permet de montrer mon évolution, de partager mes projets pratiques, et de garder une trace de tout ce que j’apprends jour après jour.</p>
+      
+      <!--cartes de présentation-->
+        <div class="flex flex-col lg:flex-row">
+<!-- Carte 1 -->            
+            <div class="group [perspective-distant] w-60 h-60 mx-auto mt-6 sm:w-70 sm:h-70 lg:w-80 lg:h-80">
+            <div class="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<!-- Face avant -->
+            <div class="absolute w-full h-full bg-gray-800 text-white flex items-center justify-center rounded-lg shadow-lg shadow-fuchsia-200 [backface-visibility:hidden]">   
+                <h2 class="font-shippori text-center text-lg font-bold m-8 sm:text-xl lg:text-2xl">Mes objectifs<i class="fa-solid fa-circle-arrow-right text-fuchsia-600 ml-2"></i></h2>
+            </div>
+<!-- Face arrière -->
+            <div class="absolute w-full h-full bg-gray-800 text-white flex items-center justify-center p-4 rounded-lg shadow-lg overflow-auto [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <p class="text-xs sm:text-sm">Apprendre à créer des sites web modernes, accessibles et bien conçus — du code à la mise en page, en passant par le design et l’interactivité.
+                Mais au-delà de la technique, mon objectif est aussi de développer une méthode de travail, une curiosité constante, et une créativité personnelle que je pourrai mettre au service de futurs projets ou d’une équipe.</p>
+            </div>
+                </div>
+        </div>
+
+<!-- Carte 2 -->
+        <div class="group [perspective-distant] w-60 h-60 mx-auto mt-6 sm:w-70 sm:h-70 lg:w-80 lg:h-80">
+            <div class="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<!-- Face avant -->
+            <div class="absolute w-full h-full bg-gray-800 text-white flex items-center justify-center text-xl font-bold rounded-lg shadow-lg shadow-fuchsia-200 [backface-visibility:hidden]">
+                <h2 class="font-shippori text-center text-lg font-bold m-8 sm:text-xl lg:text-2xl">Ce qui m'inspire<i class="fa-solid fa-circle-arrow-right text-fuchsia-600 mx-2"></i></h2>
+            </div>
+<!-- Face arrière -->
+            <div class="absolute w-full h-full bg-gray-800 text-white flex items-center justify-center p-4 rounded-lg shadow-lg overflow-auto [transform:rotateY(180deg)] [backface-visibility:hidden]">
+            <div class="text-justify text-xs sm:text-sm">
+                <ul class="list-inside space-y-2 mt-6">
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">Le Japon</span>, sa culture, sa philosophie et son sens du détail.</li>
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">La musique</span>, qui m’aide à me concentrer et stimule ma créativité.</li>
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">Mon île, La Réunion</span>, véritable source d’énergie, de diversité et d’inspiration visuelle.</li>
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">Ma famille</span>, mon principal moteur, c'est elle qui me soutient et me pousse à me dépasser chaque jour.</li>
+                </ul>
+                <p class="mt-3">Toutes ces influences se retrouvent naturellement dans ma façon d’apprendre, de créer et de coder.</p>
+            </div>  
+            </div>
+            </div>
+        </div>
+
+<!-- Carte 3 -->
+        <div class="group [perspective-distant] w-60 h-60 mx-auto mt-6 sm:w-70 sm:h-70 lg:w-80 lg:h-80">
+            <div class="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<!-- Face avant -->
+            <div class="absolute w-full h-full bg-gray-800 text-white flex items-center justify-center text-xl font-bold rounded-lg shadow-lg shadow-fuchsia-200 [backface-visibility:hidden]">
+                <h2 class="font-shippori text-center text-lg font-bold m-8 sm:text-xl lg:text-2xl">Pour bien débuter<i class="fa-solid fa-circle-arrow-right text-fuchsia-600 mx-1.5"></i></h2>
+            </div>
+<!-- Face arrière -->
+            <div class="absolute w-full h-full bg-gray-800 text-white flex items-center justify-center p-4 rounded-lg shadow-lg overflow-auto [transform:rotateY(180deg)] [backface-visibility:hidden]">
+            <div class="text-justify text-xs sm:text-sm"> 
+                <ul class="list-inside space-y-2 mt-6">
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">FreeCodeCamp, OpenClassrooms, MDN Web Docs</span> : des mines d’or pour apprendre le web.</li>
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">Visual Studio Code</span>, mon éditeur de code préféré. D'ailleurs c'est à peu près le seul que je connais pour le moment...</li>
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">PenPot ou Canva</span>, parfaits pour travailler sur le design.</li>
+                    <li class="ml-1"><span class="font-bold text-fuchsia-600">GitHub</span>, pour suivre sa progression et collaborer.</li>
+                    <li class="ml-1">Et surtout : <span class="font-bold text-fuchsia-600">la patience et la curiosité</span>, les deux meilleurs alliés d’un(e) futur(e) développeur(se).</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+            <h2 class="font-shippori text-base font-bold m-6 text-fuchsia-600 sm:text-xl lg:text-2xl">En résumé</h2>
+            <p class="mx-3 leading-relaxed text-xs text-justify sm:text-sm lg:text-base">Ce portfolio est un espace vivant, à l’image de mon parcours : en construction, en évolution, et toujours en apprentissage.
+            J’y publierai mes projets, mes expériences d’apprentissage, et quelques réflexions personnelles au fur et à mesure de mon aventure dans le monde du numérique.</p>
+    </main>
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-10 font-noto">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+<!--colonne 1-->        
+            <div class="text-xs lg:text-sm">
+                <h3 class="font-semibold text-white mb-4">Localisation</h3>
+                <p><i class="fa-solid fa-location-crosshairs mr-2 text-fuchsia-600"></i>97430 Le Tampon</p>
+                <p><i class="fa-solid fa-earth-americas mr-2 text-fuchsia-600"></i></i>Île de La Réunion</p>
+            </div>
+<!--colonne 2-->
+        <div class="text-xs lg:text-sm">
+            <h3 class="font-semibold text-white mb-4">Contact</h3>
+            <address class="not-italic">
+                <p class="mb-2">
+                    <a href="mailto:example@gmail.com" class="hover:text-fuchsia-600 transition"><i class="fa-solid fa-at mr-2 text-fuchsia-600"></i>example@gmail.com</a>
+                </p>
+                <p>
+                    <a href="tel:+262693000000" class="hover:text-fuchsia-600 transition"><i class="fa-solid fa-phone mr-2 text-fuchsia-600"></i>+262(0)693 00 00 00</a>
+                </p>
+            </address>    
+        </div>
+<!--Colonne 3-->
+            <div class="text-xs lg:text-sm">
+                <h3 class="font-semibold text-white mb-4">Rejoignez-moi sur...</h3>
+            <div class="flex justify-center space-x-4 text-xl">
+                <a href="https://www.linkedin.com/in/bassonville/" class="hover:text-fuchsia-700 transition"><i class="fa-brands fa-linkedin mr-2 text-fuchsia-600"></i></a>
+                <a href="https://github.com/mcba13" class="hover:text-fuchsia-700 transition"><i class="fa-brands fa-github mr-2 text-fuchsia-600"></i></a>
+                <a href="https://discordapp.com/users/811671929475694652" class="hover:text-fuchsia-700 transition"><i class="fa-brands fa-discord mr-2 text-fuchsia-600"></i></a>
+                <a href="https://www.youtube.com/@Natsumitakarai" class="hover:text-fuchsia-700 transition"><i class="fa-brands fa-youtube mr-2 text-fuchsia-600"></i></a>
+                <a href="https://www.instagram.com/christine.b13/" class="hover:text-fuchsia-700 transition"><i class="fa-brands fa-instagram mr-2 text-fuchsia-600"></i></a>
+            </div>
+            </div>
+    </div>
+    <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-500 text-xs">
+        <p><i class="fa-solid fa-laptop-code mr-2 text-fuchsia-600"></i>Made with<i class="fa-solid fa-heart text-fuchsia-600 mx-2"></i>by クリス</p>
+        <p class="mt-2"><i class="fa-regular fa-copyright text-fuchsia-600 mr-2"></i>Copyright クリス 2025 - Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>

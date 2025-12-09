@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    --font-shippori: "Shippori Mincho", serif;
+    --font-noto: "Noto Sans", sans-serif;
+
+    /*--breakpoint-tablet: 40rem;
+    --breakpoint-laptop: 64rem; 
+    --breakpoint-desktop: 80rem;*/
+}
