@@ -24,10 +24,14 @@ export function initNavbar() {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove("text-fuchsia-600");
+      // fuchsia-300 : contraste suffisant (WCAG AA) sur le fond sombre de la barre de navigation
+      link.classList.remove("text-fuchsia-300");
+      link.removeAttribute("aria-current");
 
       if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("text-fuchsia-600");
+        link.classList.add("text-fuchsia-300");
+        // indique aux lecteurs d'écran la section en cours
+        link.setAttribute("aria-current", "true");
       }
     });
   }
