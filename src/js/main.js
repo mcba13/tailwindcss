@@ -18,9 +18,10 @@ import '../styles/style.css';
 
 // Chargement des modules JS
 import { initNavbar } from '../components/navbar.js';
-import { initScrollSpy } from '../utils/scrollSpy.js';
+import { initScrollTop } from '../utils/scrollTop.js';
 import { initAnimations } from '../utils/animations.js';
 import { initFooter } from '../components/footer.js';
+import { initContactForm } from '../components/contactForm.js';
 
 // -------------------------------
 // INITIALISATION GLOBALE
@@ -32,13 +33,12 @@ import { initFooter } from '../components/footer.js';
  * Cela permet une meilleure maintenabilité et séparation des responsabilités.
  */
 function initApp() {
-  initNavbar();        // Navigation principale
-  initScrollSpy();     // Active la navigation dynamique (scroll actif)
+  initNavbar();        // Navigation principale + lien actif selon la section visible (scroll spy)
+  initScrollTop();     // Bouton « retour en haut »
   initAnimations();    // Gère les animations globales
-  initFooter();        // Gère le footer
+  initFooter();        // Gère le footer (année automatique)
+  initContactForm();   // Formulaire de contact (ouverture de la messagerie)
 }
 
 // Lancement de l'application
-initApp(
-  initScrollTop();
-);
+initApp();

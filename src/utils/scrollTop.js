@@ -1,16 +1,9 @@
 /**
- * SCROLL SPY
- * Permet de détecter la section visible à l'écran
- * et de mettre à jour la navigation active.
- *
- * Améliore l'expérience utilisateur sur une page unique.
- */
-
-export function initScrollSpy() {
-  /**
  * =========================
  * SCROLL TO TOP BUTTON
  * =========================
+ * Affiche un bouton « retour en haut » après un défilement de 300px
+ * et remonte en haut de la page au clic.
  */
 
 export function initScrollTop() {
@@ -34,5 +27,4 @@ export function initScrollTop() {
       behavior: "smooth"
     });
   });
-}
 }

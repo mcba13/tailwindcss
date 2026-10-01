@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark">
+<html lang="fr" class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="image" href="/public/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
     <!-- FontAwesome (icônes) -->
     <script src="https://kit.fontawesome.com/bc0e28af09.js" crossorigin="anonymous"></script>
     <!-- CSS principal (Tailwind + custom styles) -->
@@ -19,14 +19,15 @@
         ======================= -->
     <header id="navbar">
         <!-- Géré par components/navbar.js -->
-        <nav class="w-full flex items-center justify-between bg-gray-900 px-6 font-noto">
-            <a href="/index.html" class="flex-shrink-0"><img src="/public/images/logo_v2_nbg.png" alt="" class="w-16 sm:w-20 lg:w-24"></a>
-            <ul class="flex items-center gap-4 text-white text-sm sm:text-base lg:text-lg">
-                <li class="hover:text-fuchsia-600 transition"><a href="#home">Accueil</a></li>
-                <li class="hover:text-fuchsia-600 transition"><a href="#about">À Propos</a></li>
-                <li class="hover:text-fuchsia-600 transition"><a href="#projects">Mes Projets et réalisations</a></li>
-                <li class="hover:text-fuchsia-600 transition"> <a href="#news">Actualités</a></li>
-                <li class="hover:text-fuchsia-600 transition"><a href="#contact">Contact</a></li>
+        <!-- Mobile : logo et liens sur deux lignes ; à partir de md : une seule ligne -->
+        <nav aria-label="Navigation principale" class="w-full flex flex-col md:flex-row items-center justify-between gap-2 bg-gray-900 px-4 sm:px-6 py-2 font-noto">
+            <a href="#home" class="flex-shrink-0"><img src="/images/logo_v2_nbg.png" alt="Chris - retour à l’accueil" class="w-16 sm:w-20 lg:w-24"></a>
+            <ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-white text-xs sm:text-base lg:text-lg">
+                <li class="hover:text-fuchsia-300 transition"><a href="#home">Accueil</a></li>
+                <li class="hover:text-fuchsia-300 transition"><a href="#about">À Propos</a></li>
+                <li class="hover:text-fuchsia-300 transition"><a href="#projects">Projets</a></li>
+                <li class="hover:text-fuchsia-300 transition"><a href="#news">Veille</a></li>
+                <li class="hover:text-fuchsia-300 transition"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,13 +48,13 @@
             <h1 id="home-title" class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">Bonjour, je suis Chris</h1>
         
             <p class="mt-4 text-lg sm:text-xl text-gray-700 dark:text-gray-300">Développeuse web en formation DWWM à l'AFPAR.</p> 
-            <p class="mt-4 text-sm sm:text-base leading-relaxed">Je construis ce portfolio dans le carde de ma reconversion professionnelle. Mon objectif est de maitriser les bases du développement web et de progresser vers un niveau professionnel.</p>
+            <p class="mt-4 text-sm sm:text-base leading-relaxed">Je construis ce portfolio dans le cadre de ma reconversion professionnelle. Mon objectif est de maîtriser les bases du développement web et de progresser vers un niveau professionnel.</p>
             <!-- CTA -->
             <div class="mt-8 flex justify-center gap-4 flex-wrap">
-                <a href="#projects"  class="px-6 py-3 border border-fuchsia-300 text-fuchsia-600 rounded-xl hover:bg-fuchsia-50 transition">
+                <a href="#projects"  class="px-6 py-3 border border-fuchsia-300 text-fuchsia-700 dark:text-fuchsia-300 rounded-xl hover:bg-fuchsia-50 dark:hover:bg-gray-800 transition">
                     Voir mes projets
                 </a>
-                <a href="#contact" class="px-6 py-3 border border-fuchsia-300 text-fuchsia-600 rounded-xl hover:bg-fuchsia-50 transition">
+                <a href="#contact" class="px-6 py-3 border border-fuchsia-300 text-fuchsia-700 dark:text-fuchsia-300 rounded-xl hover:bg-fuchsia-50 dark:hover:bg-gray-800 transition">
                     Me contacter
                 </a>
             </div>
@@ -67,22 +68,22 @@
     SECTION À PROPOS
     ========================== -->
     <section id="about" aria-labelledby="about-title" class="py-8 px-6">
-        <h2 id="about-title" class="text-2xl sm:text-3xl font-bold text-fuchsia-600 text-center">À propos</h2>
+        <h2 id="about-title" class="text-2xl sm:text-3xl font-bold text-fuchsia-700 dark:text-fuchsia-400 text-center">À propos</h2>
         <!-- CONTENU PRINCIPAL -->
         <div class="mt-10 grid gap-10 md:grid-cols-2 items-center">
             <!-- TEXTE -->
             <div class="space-y-4 text-sm sm:text-base leading-relaxed text-justify">
-                <p>Je m'appelle Christine (Chris) et je suis actuellement en formation Développeuse Wen et Web Mobile (DWWM).</p>
+                <p>Je m'appelle Christine (Chris) et je suis actuellement en formation Développeuse Web et Web Mobile (DWWM).</p>
                 <p>Après une première découverte du développement Web lors de la formation Digital Explorer à l'
-                    <a href="https://afpar.re/" target="_blank" class="no-underline hover:underline font-bold text-fuchsia-400">AFPAR</a> 
-                    de Saint-François, j'ai choisi de poursuivre mon parcous afin de me professionnaliser dans ce domaine.
+                    <a href="https://afpar.re/" target="_blank" rel="noopener noreferrer" class="no-underline hover:underline font-bold text-fuchsia-700 dark:text-fuchsia-300">AFPAR</a> 
+                    de Saint-François, j'ai choisi de poursuivre mon parcours afin de me professionnaliser dans ce domaine.
                 </p>
                 <p>Depuis janvier, j'ai approfondi mes connaissances en maquettage, HTML et CSS et développé d'autres 
-                    compétences en JavaScript, React et bases de données entres autres.
+                    compétences en JavaScript, React et bases de données, entre autres.
                 </p>
                 <p>Ce portfolio, que j'ai commencé en Digital Explorer, a été entièrement repensé pour refléter cette progression 
                     et appliquer des pratiques plus professionnelles, notamment en termes de lisibilité du code, 
-                    d'accessiblité et d'expérience utilisateur
+                    d'accessibilité et d'expérience utilisateur.
                 </p>
                 <p>Mon objectif est d'intégrer une équipe en tant que développeuse web afin de continuer à progresser sur des sujets concrets.</p>
             </div>
@@ -111,7 +112,7 @@
     ========================== -->
     <section id="projects" aria-labelledby="projects-title">
         <div class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-2xl sm:text-3xl font-bold text-fuchsia-600 text-center">Projets et réalisations</h2>
+            <h2 id="projects-title" class="text-2xl sm:text-3xl font-bold text-fuchsia-700 dark:text-fuchsia-400 text-center">Projets et réalisations</h2>
             <p class="text-center mt-4 text-sm text-gray-600 dark:text-gray-300">Projets réalisés dans le cadre de ma formation et de ma progression en développement web.</p>
             <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- PROJET 1 -->
@@ -188,7 +189,7 @@
     <section id="news" aria-labelledby="news-title" class="py-16 px-6 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-6xl mx-auto">
             <!-- TITRE -->
-            <h2 class="text-2xl sm:text-3xl font-bold text-fuchsia-600 text-center">Veille technologique</h2>
+            <h2 id="news-title" class="text-2xl sm:text-3xl font-bold text-fuchsia-700 dark:text-fuchsia-400 text-center">Veille technologique</h2>
             <p class="text-center mt-4 text-sm text-gray-600 dark:text-gray-300">Suivi de l’évolution du développement web, de l’accessibilité et des outils modernes.</p>
             <!-- GRID -->
             <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -197,9 +198,9 @@
                     <img src="/images/ai_dev.jpg" alt="Illustration intelligence artificielle et développement" class="w-full h-40 object-cover">
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-semibold mb-2">L’IA redéfinit le rôle des développeurs</h3>
-                        <p class="text-xs text-gray-500 mb-2">Novembre 2025 • veille personnelle</p>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Novembre 2025 • veille personnelle</p>
                         <p class="text-sm text-gray-600 dark:text-gray-300 flex-grow">Les outils d’IA accélèrent le développement, mais ne remplacent pas la compréhension métier, la logique et la collaboration humaine.</p>
-                        <a href="https://www.verticalstudio.ai/blog/will-ai-replace-developers" target="_blank" class="mt-4 text-fuchsia-300 hover:underline text-sm">
+                        <a href="https://www.verticalstudio.ai/blog/will-ai-replace-developers" target="_blank" rel="noopener noreferrer" class="mt-4 text-fuchsia-700 dark:text-fuchsia-300 hover:underline text-sm">
                             Lire la source →
                         </a>
                     </div>
@@ -209,9 +210,9 @@
                 <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden flex flex-col">
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-semibold mb-2">Accessibilité et design inclusif</h3>
-                        <p class="text-xs text-gray-500 mb-2">Smashing Magazine • 30/12/2025</p>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Smashing Magazine • 30/12/2025</p>
                         <p class="text-sm text-gray-600 dark:text-gray-300 flex-grow">L’importance de concevoir des interfaces inclusives, en intégrant les personnes en situation de handicap dès la phase de conception.</p>
-                        <a href="https://www.smashingmagazine.com/category/accessibility/" target="_blank" class="mt-4 text-fuchsia-300 hover:underline text-sm">
+                        <a href="https://www.smashingmagazine.com/category/accessibility/" target="_blank" rel="noopener noreferrer" class="mt-4 text-fuchsia-700 dark:text-fuchsia-300 hover:underline text-sm">
                             Lire la source →
                         </a>
                     </div>
@@ -221,9 +222,9 @@
                 <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden flex flex-col">
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-semibold mb-2">Authentification et accessibilité (CAPTCHA)</h3>
-                        <p class="text-xs text-gray-500 mb-2">Smashing Magazine • 27/11/2025</p>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Smashing Magazine • 27/11/2025</p>
                         <p class="text-sm text-gray-600 dark:text-gray-300 flex-grow">Analyse des limites des CAPTCHA et proposition d’alternatives plus inclusives comme les liens magiques ou le SSO.</p>
-                        <a href="https://www.smashingmagazine.com/2025/11/accessibility-problem-authentication-methods-captcha/" target="_blank"  class="mt-4 text-fuchsia-300 hover:underline text-sm">
+                        <a href="https://www.smashingmagazine.com/2025/11/accessibility-problem-authentication-methods-captcha/" target="_blank" rel="noopener noreferrer"  class="mt-4 text-fuchsia-700 dark:text-fuchsia-300 hover:underline text-sm">
                             Lire la source →
                         </a>
                     </div>
@@ -233,9 +234,9 @@
                 <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden flex flex-col">
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-lg font-semibold mb-2">IA et design systems avec Penpot</h3>
-                        <p class="text-xs text-gray-500 mb-2">Smashing Magazine • 08/01/2026</p>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Smashing Magazine • 08/01/2026</p>
                         <p class="text-sm text-gray-600 dark:text-gray-300 flex-grow">Introduction aux MCP servers permettant à l’IA d’interagir directement avec des outils de design comme Penpot.</p>
-                        <a href="https://www.smashingmagazine.com/" target="_blank" class="mt-4 text-fuchsia-300 hover:underline text-sm">
+                        <a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer" class="mt-4 text-fuchsia-700 dark:text-fuchsia-300 hover:underline text-sm">
                             Lire la source →
                         </a>
                     </div>
@@ -250,10 +251,11 @@
     <section id="contact" aria-labelledby="contact-title" class="py-16 px-6 bg-white dark:bg-gray-950">
         <div class="max-w-4xl mx-auto">
         <!-- TITRE -->
-            <h2 id="contact-title" class="text-2xl sm:text-3xl font-bold text-fuchsia-600 text-center">Me contacter</h2>
+            <h2 id="contact-title" class="text-2xl sm:text-3xl font-bold text-fuchsia-700 dark:text-fuchsia-400 text-center">Me contacter</h2>
             <p class="text-center mt-4 text-sm text-gray-600 dark:text-gray-300">Pour toute opportunité, collaboration ou échange autour du développement web.</p>
             <!-- FORMULAIRE -->
-            <form class="mt-10 space-y-6">
+            <!-- Envoi par la messagerie de l'utilisateur (lien mailto), géré par components/contactForm.js -->
+            <form id="contact-form" class="mt-10 space-y-6" data-contact-email="example@gmail.com">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Nom
                         <input type="text" id="name" name="name" required 
@@ -275,16 +277,18 @@
 
                 <!-- RGPD -->
                 <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
-                    <input type="checkbox" required class="mt-1">
-                    <p>J’accepte que mes données soient utilisées uniquement pour être recontacté dans le cadre de ma demande.</p>
+                    <input type="checkbox" id="consent" name="consent" required class="mt-1">
+                    <label for="consent">J’accepte que mes données soient utilisées uniquement pour être recontacté(e) dans le cadre de ma demande.</label>
                 </div>
 
                 <!-- BOUTON -->
-                <button type="submit" class="w-full py-3 bg-fuchsia-400 text-white rounded-xl hover:bg-fuchsia-600 transition">Envoyer le message</button>
+                <p class="text-xs text-gray-600 dark:text-gray-400">L’envoi ouvre votre messagerie avec le message pré-rempli : aucune donnée n’est stockée sur ce site.</p>
+
+                <button type="submit" class="w-full py-3 bg-fuchsia-700 text-white rounded-xl hover:bg-fuchsia-800 transition">Envoyer le message</button>
             </form>
             <!-- INFOS DIRECTES -->
             <div class="mt-12 text-center text-sm text-gray-600 dark:text-gray-300 space-y-2">
-                <p>📧 <a href="mailto:example@gmail.com" class="text-fuchsia-300 hover:underline">example@gmail.com</a></p>
+                <p>📧 <a href="mailto:example@gmail.com" class="text-fuchsia-700 dark:text-fuchsia-300 hover:underline">example@gmail.com</a></p>
                 <p>📍 Le Tampon, La Réunion</p>
             </div>
         </div>
@@ -305,8 +309,8 @@
             ========================== -->
             <div>
                 <h3 class="font-semibold text-white mb-4">Localisation</h3>
-                <p><i class="fa-solid fa-location-dot text-fuchsia-300"></i>97430 Le Tampon</p>
-                <p><i class="fa-solid fa-earth-americas mr-2 text-fuchsia-300"></i></i>La Réunion</p>
+                <p><i class="fa-solid fa-location-dot text-fuchsia-300" aria-hidden="true"></i>97430 Le Tampon</p>
+                <p><i class="fa-solid fa-earth-americas mr-2 text-fuchsia-300" aria-hidden="true"></i>La Réunion</p>
             </div>
 
             <!-- =========================
@@ -316,11 +320,11 @@
                 <h3 class="font-semibold text-white mb-4">Contact</h3>
                 <address class="not-italic space-y-2">
                     <p class="flex items-center gap-2">
-                        <i class="fa-solid fa-envelope mr-2 text-fuchsia-300"></i>
+                        <i class="fa-solid fa-envelope mr-2 text-fuchsia-300" aria-hidden="true"></i>
                         <a href="mailto:example@gmail.com" class="hover:text-fuchsia-300 transition">example@gmail.com</a>
                     </p>
                     <p class="flex items-center gap-2">
-                        <i class="fa-solid fa-phone mr-2 text-fuchsia-300"></i>
+                        <i class="fa-solid fa-phone mr-2 text-fuchsia-300" aria-hidden="true"></i>
                         <a href="tel:+262693000000" class="hover:text-fuchsia-300 transition">+262(0)693 00 00 00</a>
                     </p>
                 </address>    
@@ -333,16 +337,16 @@
                 <h3 class="font-semibold text-white mb-4">Réseaux</h3>
                 <div class="flex gap-4 text-xl">
                     <a href="https://www.linkedin.com/in/bassonville/" aria-label="LinkedIn" class="hover:text-fuchsia-300 transition">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                     </a>
                     <a href="https://github.com/mcba13" aria-label="GitHub"  class="hover:text-fuchsia-300 transition">
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
                     </a>
                     <a href="https://discordapp.com/users/811671929475694652" aria-label="Discord" class="hover:text-fuchsia-300 transition">
-                        <i class="fa-brands fa-discord"></i>
+                        <i class="fa-brands fa-discord" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.instagram.com/christine.b13/" class="hover:text-fuchsia-300 transition">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/christine.b13/" aria-label="Instagram" class="hover:text-fuchsia-300 transition">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -350,12 +354,12 @@
         <!-- =========================
         BAS DE FOOTER
         ========================== -->
-        <div class="border-t border-gray-700 py-6 text-center text-xs text-gray-500">
+        <div class="border-t border-gray-700 py-6 text-center text-xs text-gray-400">
             <p class="flex items-center justify-center gap-2">
-                <i class="fa-solid fa-code text-fuchsia-300"></i>
-                Made with<i class="fa-solid fa-heart text-fuchsia-300"></i>by クリス
+                <i class="fa-solid fa-code text-fuchsia-300" aria-hidden="true"></i>
+                Made with<i class="fa-solid fa-heart text-fuchsia-300" aria-hidden="true"></i>by クリス
             </p>
-            <p class="mt-2"><i class="fa-regular fa-copyright text-fuchsia-300 mr-2"></i>Copyright クリス <span id="year"></span> - Tous droits réservés</p>
+            <p class="mt-2"><i class="fa-regular fa-copyright text-fuchsia-300 mr-2" aria-hidden="true"></i>Copyright クリス <span id="year"></span> - Tous droits réservés</p>
         </div>
     </footer>
     
@@ -363,7 +367,7 @@
     BOUTON SCROLL TOP
     ========================= -->
     <button id="scrollTopBtn" aria-label="Retour en haut" class="fixed bottom-6 right-6 hidden bg-fuchsia-600 text-white p-3 rounded-full shadow-lg hover:bg-fuchsia-700 transition">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </button>
     
     <!-- Script principal Vite -->

@@ -3,8 +3,8 @@
  *
  * Ce portfolio est construit en architecture one-page modulaire.
  *
- * - components/ : éléments UI réutilisables (navbar, footer)
- * - sections/   : blocs de contenu de la page unique
+ * - components/ : éléments UI réutilisables (navbar, footer, formulaire de contact)
+ * - utils/      : fonctions utilitaires (bouton retour en haut, animations)
  * - js/         : logique d'orchestration et interactions globales
  * - styles/     : styles Tailwind et personnalisations globales
  *
